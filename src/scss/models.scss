@@ -1,0 +1,36 @@
+@import './style';
+
+.main-model {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 5rem;
+  
+    @media (max-width: 800px) {
+      padding: 0 1rem;
+    }
+  }
+  
+  .model-main-div {
+    width: 100%;
+  }
+  
+  .modelssss-div {
+    padding: 50px 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+  
+    @media (max-width: 1150px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
+  
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      padding: 30px 1rem 0;
+    }
+  }

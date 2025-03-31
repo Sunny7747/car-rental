@@ -2,6 +2,7 @@ import React from 'react'
 import Img3 from "../images/reviewSec/pfp1.jpg";
 import Img2 from "../images/reviewSec/pfp2.jpg";
 import svg from "../images/reviewSec/mark.svg";
+import '../scss/review.scss'
 
 const Review = () => {
   return (

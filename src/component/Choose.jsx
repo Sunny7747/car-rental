@@ -2,6 +2,7 @@ import React from 'react'
 import Box1 from "../images/chooseUs/icon1.png";
 import Box2 from "../images/chooseUs/icon2.png";
 import Box3 from "../images/chooseUs/icon3.png";
+import '../scss/choose.scss'
 
 const Choose = () => {
   return (

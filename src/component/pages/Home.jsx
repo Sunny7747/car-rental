@@ -7,6 +7,7 @@ import CarAdsSec from "../CarAdsSec"
 import Choose from "../Choose"
 import Review from '../Review'
 import Footer from '../Footer'
+import '../../scss/home.scss'
 
 const Home = () => {
 

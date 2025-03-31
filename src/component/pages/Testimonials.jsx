@@ -1,6 +1,7 @@
 import React from 'react'
 import Review from '../Review'
 import Footer from '../Footer'
+import '../../scss/testimonial.scss'
 
 const Testimonials = () => {
   return (

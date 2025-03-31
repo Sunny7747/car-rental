@@ -1,6 +1,7 @@
 import React from 'react'
 // import talking from "/Users/sunnygupta/Desktop/car-rental/src/images/reviewSec/talking.jpg"
 import talking from "../../images/reviewSec/talking.jpg"
+import '../../scss/aboutCompany.scss'
 
 const AboutCompany = () => {
   return (

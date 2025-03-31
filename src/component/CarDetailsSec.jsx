@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import data from "../component/CarData"
+import '../scss/carDetailSec.scss'
 
 const CarDetailsSec = () => {
 

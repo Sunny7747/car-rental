@@ -3,6 +3,7 @@ import RepeteCarCard from '../modelsComponent/RepeteCarCard'
 import SameTitle from '../aboutSec/SameTitle'
 import fetchCarData from "../modelsComponent/fetchCarData"
 import Footer from '../Footer'
+import '../../scss/models.scss'
 
 const Models = () => {
   return (

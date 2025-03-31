@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../scss/bookSec.scss'
 
 const BookSec = () => {
 // UseState define

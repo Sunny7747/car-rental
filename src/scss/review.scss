@@ -1,0 +1,117 @@
+@import './style';
+
+.review-main {
+    background-color: $bg-gray;
+    padding: 10rem 1.5rem;
+    height: auto;
+    color: $text-black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  
+    @media (max-width: 1000px) {
+      padding: 5rem 1rem;
+    }
+  
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 15rem;
+      gap: 12px;
+  
+      @media (max-width: 1000px) {
+        padding: 0 5rem;
+      }
+  
+      @media (max-width: 650px) {
+        padding: 0 1rem;
+      }
+  
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 300;
+        font-family: $titles-font;
+      }
+  
+      h1 {
+        font-size: 4vmax;
+        font-family: $titles-font;
+      }
+  
+      p {
+        color: $text-gray;
+        font-weight: 100;
+        text-align: center;
+        font-family: $text-font;
+      }
+    }
+  
+    .bottom {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+  
+      @media (max-width: 1000px) {
+        justify-content: space-evenly;
+      }
+  
+      @media (max-width: 750px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+  
+      .same {
+        width: 35%;
+        background-color: $bg-white;
+        padding: 1rem;
+  
+        @media (max-width: 750px) {
+          width: 80%;
+          padding: 1.5rem;
+        }
+  
+        h3 {
+          line-height: 1.4;
+          color: $text-black;
+          font-weight: 400;
+          height: auto;
+          font-family: $text-font;
+        }
+  
+        .content {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 2.5rem;
+  
+          .name-img {
+            display: flex;
+            width: 45%;
+            justify-content: space-between;
+            align-items: center;
+  
+            @media (max-width: 750px) {
+              width: 55%;
+            }
+  
+            h3 {
+              font-weight: 500;
+              font-family: $titles-font;
+            }
+          }
+  
+          .svg-img {
+            height: 3rem;
+            width: 3rem;
+          }
+        }
+      }
+  
+      .img {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+      }
+    }
+  }

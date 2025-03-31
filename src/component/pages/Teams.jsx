@@ -6,6 +6,7 @@ import Person4 from "../../images/team/4.png";
 import Person5 from "../../images/team/5.png";
 import Person6 from "../../images/team/6.png";
 import Footer from '../Footer'
+import '../../scss/teams.scss'
 
 
 const Teams = () => {

@@ -1,0 +1,200 @@
+@import './style';
+
+.car-details-sec {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    @media (max-width: 1021px) {
+      height: 150vh;
+    }
+  
+    @media (max-width: 700px) {
+      height: 200vh;
+    }
+  
+    .main {
+      height: fit-content;
+      width: 96vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  
+      @media (max-width: 1021px) {
+        height: 100%;
+        padding-top: 30px;
+      }
+  
+      .titles {
+        height: 25vh;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+  
+        @media (max-width: 700px) {
+          width: 100%;
+          padding: 0 20px;
+        }
+  
+        h1 {
+          font-size: 2.5rem;
+        }
+  
+        h2 {
+          font-size: 1.5rem;
+        }
+  
+        p {
+          font-size: 13px;
+          color: $text-gray;
+  
+          @media (max-width: 1021px) {
+            margin: 20px 0;
+          }
+        }
+      }
+  
+      .functional-items {
+        height: 63vh;
+        width: 100%;
+        display: flex;
+  
+        @media (max-width: 1021px) {
+          flex-direction: column;
+          height: auto;
+        }
+  
+        .all-btns {
+          height: 100%;
+          width: 25%;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(6, auto);
+          gap: 5px;
+  
+          @media (max-width: 1021px) {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+          }
+  
+          button {
+            border: none;
+            text-align: start;
+            padding-left: 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            cursor: pointer;
+            font-family: $titles-font;
+  
+            @media (max-width: 1021px) {
+              padding: 15px 0 15px 10px;
+            }
+  
+            &:hover {
+              background-color: $orange;
+              color: white;
+            }
+          }
+        }
+  
+        .car-and-carData-sec {
+          width: 100%;
+          display: flex;
+  
+          @media (max-width: 700px) {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+          }
+  
+          .car-img {
+            width: 70%;
+            padding: 0 50px;
+            height: 100%;
+  
+            @media (max-width: 700px) {
+              width: 100%;
+              padding: 0 20px;
+              margin-bottom: 30px;
+            }
+  
+            img {
+              width: 100%;
+              padding-top: 1rem;
+            }
+          }
+  
+          .data-tabel {
+            width: 30%;
+            padding: 0;
+  
+            @media (max-width: 700px) {
+              width: 90%;
+            }
+  
+            .price-sec {
+              background-color: $orange;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-size: 1rem;
+  
+              span {
+                font-size: 2rem;
+                font-weight: 700;
+              }
+            }
+  
+            .car-info-changing-dynamicaly {
+              display: flex;
+              flex-direction: column;
+  
+              .pick-description {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 40px;
+                text-align: center;
+  
+                span {
+                  padding: 11px 0;
+                  border-bottom: 1px solid $text-gray;
+                  border-right: 2px solid $text-gray;
+                  border-left: 2px solid $text-gray;
+                  font-family: "Roboto", sans-serif;
+                }
+              }
+            }
+  
+            a {
+              background-color: $orange;
+              display: inline-block;
+              width: 100%;
+              height: 45px;
+              margin-top: 23px;
+              text-decoration: none;
+              color: #fff;
+              text-align: center;
+              font-weight: 600;
+              font-size: 1.33rem;
+              padding: 6px;
+              transition: all 0.3s;
+              box-shadow: 6px 6px 0 #efe9e9;
+  
+              &:hover {
+                background-color: #e9381d;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

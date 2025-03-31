@@ -1,6 +1,7 @@
 import React from 'react'
 // import car1 from "/Users/sunnygupta/Desktop/car-rental/src/images/cars-big/audi-box.png"
 import car1 from "../../images/cars-big/audi-box.png"   
+import '../../scss/repeteCarCard.scss'
 
 
 

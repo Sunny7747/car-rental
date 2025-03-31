@@ -1,0 +1,129 @@
+@import './style';
+
+.choose-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    @media (max-width: 1000px) {
+      height: auto;
+      padding: 3rem 0;
+    }
+  
+    .main-container {
+      height: 75vh;
+      width: 85%;
+      display: flex;
+  
+      @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+        height: auto;
+        width: 90%;
+      }
+  
+      .left {
+        height: 100%;
+        width: 55%;
+        padding: 0 4.5rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+  
+        @media (max-width: 1000px) {
+          width: 100%;
+          padding: 0 1rem;
+          align-items: center;
+        }
+  
+        h1 {
+          font-size: 2rem;
+          font-family: $titles-font;
+        }
+  
+        h2 {
+          font-size: 2.5rem;
+          line-height: 1.3;
+          margin-bottom: 20px;
+          font-family: $titles-font;
+        }
+  
+        p {
+          font-family: "Roboto", sans-serif;
+          line-height: 1.5;
+          word-spacing: 1.5px;
+        }
+  
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: 700;
+          background-color: $orange;
+          padding: 0.8rem 1.6rem;
+          border-radius: 0.3rem;
+          box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
+          transition: all 0.3s;
+          border: 2px solid $orange;
+          font-size: 16px;
+          width: fit-content;
+          margin-top: 35px;
+  
+          &:hover {
+            box-shadow: 0 10px 15px rgba(255, 83, 48, 0.6);
+            background-color: #fa4226;
+          }
+        }
+      }
+  
+      .right {
+        height: 100%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+  
+        @media (max-width: 1000px) {
+          width: 100%;
+          padding: 0 1rem;
+        }
+  
+        .text-container {
+          display: flex;
+          flex-direction: row;
+          width: auto;
+  
+          @media (max-width: 500px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+  
+          img {
+            margin: 15px;
+  
+            @media (max-width: 500px) {
+              margin: 10px 0;
+            }
+          }
+  
+          #text-container-inside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+  
+            h4 {
+              font-size: 1.5rem;
+              font-family: $titles-font;
+            }
+  
+            p {
+              font-family: "Roboto", sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }

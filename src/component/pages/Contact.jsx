@@ -1,7 +1,7 @@
 import React from 'react'
 import SameTitle from '../aboutSec/SameTitle'
 import Footer from '../Footer'
-
+import '../../scss/contact.scss'
 const Contact = () => {
   return (
     <div>

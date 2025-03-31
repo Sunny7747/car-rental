@@ -3,6 +3,7 @@ import SameTitle from '../aboutSec/SameTitle'
 import AboutCompany from '../aboutSec/AboutCompany'
 import PlanTrip from "../PlanTrip"
 import Footer from '../Footer'
+import '../../scss/about.scss'
 
 const About = () => {
   return (

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import heroCar from "../images/heroCar.png"
+import '../scss/hero.scss'
+
 const Hero = () => {
   return (
     <div className='hero-sec' id='hero-home'>

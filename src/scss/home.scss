@@ -1,0 +1,37 @@
+@import './style';
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+    @media (max-width: 800px) {
+      padding: 0 1rem;
+    }
+  }
+  
+  .back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: $orange;
+    color: white;
+    border: 3px solid white;
+    padding: 12px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: $titles-font;
+  
+    @media (max-width: 650px) {
+      padding: 8px 15px;
+      font-size: 18px;
+    }
+  
+    &:hover {
+      background-color: #fa4226;
+    }
+  }

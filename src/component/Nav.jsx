@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../images/logo.jpg"
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import '../scss/nav.scss'
 
 const Nav = () => {
  

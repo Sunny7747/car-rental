@@ -1,5 +1,7 @@
 import React from 'react'
 import topCar from "../images/brownCar.png"
+import '../scss/carAdsSec.scss'
+
 const CarAdsSec = () => {
   return (
     <div>

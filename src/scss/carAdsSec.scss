@@ -1,0 +1,92 @@
+@import './style';
+
+.banner-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0;
+    padding: 2.5rem 0;
+    text-align: center;
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-content {
+        color: $text-orange;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+
+        &__text {
+            max-width: 800px;
+            padding: 0 20px;
+
+            h2 {
+                font-size: 2.8rem;
+                line-height: 1.3;
+                font-family: $titles-font;
+
+                span {
+                    color: $btn-black;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 2.2rem;
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+                font-size: 1.4rem;
+                color: #6e6e6e;
+
+                span {
+                    color: $btn-black;
+                    font-weight: 900;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+                transition: all 0.3s;
+
+                &:hover {
+                    filter: blur(0);
+                }
+
+                @media (max-width: 550px) {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

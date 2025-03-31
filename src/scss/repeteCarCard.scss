@@ -1,0 +1,120 @@
+@import './style';
+
+.CarCardMainSec {
+    height: 80vh;
+    overflow: hidden;
+  
+    @media (max-width: 800px) {
+      height: 92vh;
+    }
+  
+    @media (max-width: 500px) {
+      height: auto;
+    }
+  
+    .img {
+      overflow: hidden;
+      height: 50%;
+  
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .others {
+      border: 1px solid #d5d5d5;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+  
+      @media (max-width: 500px) {
+        height: auto;
+        padding-bottom: 1rem;
+      }
+  
+      .name-and-price {
+        display: flex;
+        margin: 18px 0;
+        justify-content: space-between;
+        align-items: center;
+  
+        .name {
+          padding-left: 20px;
+  
+          h2 {
+            font-family: $titles-font;
+            font-size: 1.5rem;
+          }
+        }
+  
+        .prices {
+          padding-right: 20px;
+  
+          h2 {
+            font-size: 1.3rem;
+            font-family: $titles-font;
+          }
+        }
+  
+        @media (max-width: 500px) {
+          flex-direction: column;
+          text-align: center;
+          gap: 10px;
+  
+          .name,
+          .prices {
+            padding: 0;
+          }
+        }
+      }
+  
+      .lastOthers {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 0.5rem;
+  
+        p {
+          padding-left: 20px;
+          margin-bottom: 15px;
+          font-family: $text-font;
+          color: $text-gray;
+  
+          @media (max-width: 500px) {
+            padding-left: 10px;
+          }
+        }
+  
+        @media (max-width: 500px) {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+      }
+  
+      button {
+        background-color: $orange;
+        padding: 1rem 2.2rem;
+        color: white;
+        border-radius: 0.3rem;
+        box-shadow: 0 10px 15px rgba(255, 83, 48, 0.35);
+        transition: all 0.3s;
+        border: 2px solid $orange;
+        margin: 20px 0 0 55px;
+        font-size: 1.1rem;
+        width: 60%;
+        cursor: pointer;
+  
+        &:hover {
+          box-shadow: 0 10px 15px rgba(255, 83, 48, 0.6);
+          background-color: #fa4226;
+        }
+  
+        @media (max-width: 500px) {
+          width: 80%;
+          margin: 20px auto 0;
+          padding: 0.8rem 1.5rem;
+        }
+      }
+    }
+  }

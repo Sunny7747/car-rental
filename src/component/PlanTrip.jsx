@@ -2,6 +2,7 @@ import React from 'react'
 import SelectCar from "../images/icon1.png";
 import Contact from "../images/icon2.png";
 import Drive from "../images/icon3.png";
+import '../scss/planTrip.scss'
 
 
 const PlanTrip = () => {

@@ -1,6 +1,7 @@
 import React from 'react'
 // import carVector from "/Users/sunnygupta/Desktop/car-rental/src/images/reviewSec/carVector.png"
 import carVector from "../../images/reviewSec/carVector.png"
+import '../../scss/sameTitle.scss'
 
 const SameTitle = (props) => {
   return (
